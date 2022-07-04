@@ -1,7 +1,0 @@
-#gnome-terminal -- bash -c "prueba.sh; exec bash"
-#gnome-terminal -x bash -c "bash prueba.sh; exec bash"
-gnome-terminal -x bash  -c "figma-linux; exec bash"
-gnome-terminal -x bash  -c "notion-snap; exec bash"
-gnome-terminal -x bash  -c "texstudio; exec bash"
-gnome-terminal -x bash  -c "spotify; exec bash"
-gnome-terminal -x bash  -c "firefox; exec bash"
