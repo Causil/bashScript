@@ -1,20 +1,20 @@
 #El siguiente código clasifica archivos de una carpeta llamada taller
 
-for dir in $@
+for directory in $@
 do 
-if [ -d $dir ]; then
+if [ -d $directory ]; then
   echo 'Las carpetas ya estan creadas'
   echo 'Eliminelas y descomprima el archivo y vuelva a ejecutar el archivo.sh'
   exit
 else
-  mkdir $dir
+  mkdir $directory
 fi
 done
-allFile=`ls taller`
-for item in $allFile; do
+allDir=`ls taller`
+for item in $allDir; do
     if [ ! $item == 'passwd' ]; then
-      allFileItem=`ls taller/$item`
-      for file in $allFileItem ;do
+      allFile=`ls taller/$item`
+      for file in $allFile ;do
           ext=`ls taller/$item/$file | rev | cut -d '.' -f 1 | rev`
           #file_name=`ls taller/$item/$file | rev | cut -d '.' -f 2 | rev`
           if [[ $ext == "csv" || $ext == "doc" ]] ;then 
